@@ -1,0 +1,15 @@
+do 
+mkdir chat-app
+cd chat-app
+npm init -y
+npm install express socket.io
+
+then do 
+mkdir public
+
+after go to 
+server.js and run in the terminal node server.js
+websites are 
+
+For the server, navigate to http://localhost:3000/server.html.
+For the client, navigate to http://localhost:3000/client.html.
