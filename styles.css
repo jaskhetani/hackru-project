@@ -1,0 +1,285 @@
+/* Background Animation */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(120deg, #e0f7fa, #ffccbc, #ffe0b2);
+  background-size: 300% 300%;
+  animation: gradientBackground 10s ease infinite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 102vw;  
+  height: 102vh; 
+  margin: 0;
+}
+
+/* Keyframes for background gradient animation */
+@keyframes gradientBackground {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+h1 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.button-group {
+  margin-bottom: 20px;
+}
+
+button {
+  margin: 5px;
+  padding: 12px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+}
+
+button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: rgba(255, 255, 255, 0.3);
+  transition: all 0.6s;
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: 50%;
+}
+
+button:hover::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+video {
+  width: 90%;   
+  max-width: 450px;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+/* styles.css */
+
+.login-container {
+  background-color: #fff;
+  padding: 25px; 
+  border-radius: 10px; 
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 320px; 
+  text-align: center;
+  margin-bottom: 25px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.login-container h2 {
+  margin-bottom: 25px; 
+}
+
+.login-container label {
+  display: block; 
+  margin-bottom: 10px; 
+  text-align: left;
+}
+
+.login-container input {
+  width: 95%; 
+  padding: 12px;
+  margin-bottom: 20px; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-container button {
+  width: 95%; 
+  padding: 12px; 
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-container button:hover {
+  background-color: #0056b3;
+}
+
+.register-container {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  text-align: center;
+  margin-bottom: 25px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.register-container h2 {
+  margin-bottom: 15px;
+}
+
+.register-container label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.register-container input {
+  width: 95%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.register-container button {
+  width: 95%;
+  padding: 12px;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.register-container button:hover {
+  background-color: #0056b3;
+}
+
+.navbar {
+  background-color: #4CAF50; /* Updated color to match background */
+  overflow: hidden;
+  border-radius: 8px; /* Smooth edges */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for a nicer look */
+  margin-bottom: 20px; /* Add margin for spacing */
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Center the list items */
+  align-items: center; /* Center the list items vertically */
+}
+
+.navbar li {
+  float: none; /* Remove float */
+  margin: 0 10px; /* Add margin between items */
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  position: relative;
+  border-radius: 8px; /* Smooth edges */
+  transition: background-color 0.3s; /* Smooth transition on hover */
+  font-family: Arial, sans-serif; /* Ensure consistent font */
+  font-size: 16px; /* Set font size */
+}
+
+.navbar li a:hover {
+  background-color: #45a049; /* Updated hover color */
+}
+
+.navbar li a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+}
+.dashboard-container {
+  padding: 20px;
+}
+
+section {
+  background-color: white;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+h2 {
+  color: #333;
+}
+
+p {
+  color: #666;
+}
+
+/* Style the checkbox container */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Style the checkbox itself */
+.checkbox-container input[type="checkbox"] {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #007BFF;
+  border-radius: 4px;
+  margin-right: 8px;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Custom checkmark style for the checkbox */
+.checkbox-container input[type="checkbox"]:checked {
+  background-color: #007BFF;
+  border: 1px solid #007BFF;
+}
+
+.checkbox-container input[type="checkbox"]:checked::after {
+  content: '✔';
+  font-size: 15px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Label styling for checkbox */
+.checkbox-container label {
+  cursor: pointer;
+  user-select: none;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

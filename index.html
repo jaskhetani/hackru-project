@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="extension-name">
+        <h1>DementoCare</h1>
+        <style>
+            h1{
+                color: #2f5b91;
+                text-align: center;
+            }
+        </style>
+    </div>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <div class="checkbox-container">
+                <input type="checkbox" id="staySignedIn">
+                <label for="staySignedIn">Stay Signed In</label>
+            </div>         
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <div class="register-container">
+        <p> New patient? <a href="./register.html">Sign-up here</a></p>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', checkLoginStatus);
+    </script>
+    
+</body>
+</html>
