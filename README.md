@@ -1,5 +1,5 @@
 # HackRU - DementoCare Chrome Extension
-This project aims to aid users suffering from dementia in more ways than one. A multi-feature Chrome extension tool to relieve stress for users who have dementia.  
+DementoCare is a versatile Chrome extension designed to support individuals living with dementia, offering a range of features to ease daily challenges and reduce stress. This multi-functional tool empowers users with dementia and provides peace of mind for their caregivers and family members.
 
 What it does: <br>
 -Captures the URL and Screenshots of pages visited once the user switches tabs <br>
